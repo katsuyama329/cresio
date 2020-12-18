@@ -1,0 +1,36 @@
+.p-section__contact{
+    width: 100%;
+    text-align: center;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    }
+    p {
+        margin: 30px auto 80px auto;
+        color: #707070;
+    }
+    form {
+        label {
+         display: block;
+         color: #707070;
+        }
+        input {
+         display: block;
+         margin: 20px auto;
+         padding: 5px 150px;
+         background-color: rgba($color: #00aaff, $alpha: 0.2);
+        }
+        textarea {
+            display: block;
+            margin: 20px auto;
+            padding: 70px 150px;
+            background-color: rgba($color: #00aaff, $alpha: 0.2);
+        }
+        .buttom {
+           padding: 8px 18px;
+           color: white;
+           font-weight: bold;
+           background-color: #707070;
+        }
+    }
+}

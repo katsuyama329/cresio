@@ -1,0 +1,69 @@
+$btnWidth: 20px;
+$btnHeight: 1px;
+
+.p-humburger {
+    width : 55px;
+    height : 51.8px;
+    background-color: #fff;
+    position: relative;
+    @include breakpoint( tablet ) {
+        width : 77.77px;
+        height : 72.89px;
+        background-color: #fff;
+        position: relative;
+       }
+    @include breakpoint( pc ) {
+     display: none;
+    }
+    &::before,
+    &::after {
+     content   : "";
+     width     : $btnWidth;
+     height    : $btnHeight;
+     background: #707070;
+     position  : absolute;
+     left      : calc( 50% - ( #{$btnWidth} / 2 ) );
+     display   : block;
+     transition: transform 0.2s;
+    }
+    &::before {
+     top: 12px;
+     @include breakpoint ( tablet ) {
+         top: 16px
+        }
+    }
+    &::after {
+     top: 35px;
+     @include breakpoint ( tablet ) {
+         top: 53px;
+        }
+    }
+    > span {
+     width: $btnWidth;
+     height: $btnHeight;
+     font-size: 0;
+     background: linear-gradient( to right, #707070, #707070 ) repeat-x #707070;
+     background-size: auto $btnHeight;
+     position: absolute;
+     left: calc( 50% - ( #{$btnWidth} / 2 ) );
+     top: 50%;
+     transition: transform 0.2s;
+    }
+    &.is-open {
+        &::before {
+         transform: rotate( 45deg );
+         top: 28px;
+        }
+        &::after {
+         transform: rotate( -45deg );
+         top: 28px;
+        }
+        > span {
+            background: none;
+        }
+    }
+}
+
+body.is-open {
+    position: fixed;
+}

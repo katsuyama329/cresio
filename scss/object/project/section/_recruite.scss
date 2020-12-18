@@ -1,0 +1,30 @@
+.p-section__recruit {
+    text-align: center;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    }
+    h2{ 
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+    h3 {
+        margin-bottom: 50px;
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+    a {
+        font-size: 33px;
+        color: #707070;
+        border: solid #707070 4px;
+        padding: 16px;
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+}

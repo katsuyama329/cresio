@@ -1,0 +1,66 @@
+.p-section__company {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../../../../img/company.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #00aaff;
+    box-sizing: border-box;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    }
+    .c-headline--h2_2 {
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+    > ul {
+        background-color: rgba($color: #707070, $alpha: 0.6);
+        .left {
+            text-align: center;
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            dl {
+                display: flex;
+                line-height: 1px;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                }
+                dt {
+                    color: #fff;
+                    font-size: 14px;
+                    @include breakpoint ( tablet ) {
+                    }
+                    @include breakpoint ( pc ) {
+                    }
+                }
+                 dd {
+                    padding-left: 10px;
+                    color: #fff;
+                    font-size: 14px;
+                        @include breakpoint ( tablet ) {
+                    }
+                        @include breakpoint ( pc ) {
+                    }
+                }
+            }
+        }
+        .right {
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            .p-map{
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                }
+            }
+        }
+    }
+}
