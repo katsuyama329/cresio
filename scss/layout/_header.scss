@@ -5,9 +5,11 @@
         max-width: 100%;
     }
     @include breakpoint ( pc ) {
+        position: static;
         max-width: 100%;
         display: flex;
-        flex-grow: 1;
+        justify-content: space-around;
+        align-items: flex-end;
     }
     &__logo {
         @include breakpoint ( tablet ) {
@@ -38,27 +40,9 @@
 
         }
         @include breakpoint ( pc ) {
-            flex-grow: 1;
+            padding-bottom: 30px;
         }
         .right{
-            
-            .p-gnav{
-                ul{
-                     display: none;
-                    @include breakpoint ( tablet ) {
-                        display: none;
-                    }
-                    @include breakpoint ( pc ) {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-                    li{
-                     @include breakpoint ( pc ) {
-                         padding: 30px;
-                    }
-                    }
-                }
-            }
             .p-humburger {
                 position: absolute;
                 top: 0px;

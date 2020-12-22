@@ -1,5 +1,6 @@
 $btnWidth: 20px;
 $btnHeight: 1px;
+//*--button--*//
 
 .p-humburger {
     width : 55px;
@@ -29,7 +30,7 @@ $btnHeight: 1px;
     &::before {
      top: 12px;
      @include breakpoint ( tablet ) {
-         top: 16px
+         top: 16px;
         }
     }
     &::after {
@@ -66,4 +67,55 @@ $btnHeight: 1px;
 
 body.is-open {
     position: fixed;
+}
+
+//*--menu--*//
+
+body {
+	overflow-x: hidden;
+}
+.p-gnav {
+    transition: all 750ms 0s ease;
+    color: #fff;
+    left: 100%;
+    width         : 100vw;
+    height        : 100vh;
+    padding       : 60px 50px;
+    position      : fixed;
+    background-color: rgba($color: #707070, $alpha: 0.3);
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    z-index       : 100;
+    @include breakpoint( pc ) {
+        width         : inherit;
+        height        : inherit;
+        padding       : inherit;
+        position      : static;
+        background    : inherit;
+        flex-direction: row;
+        transition: inherit;
+        color: #707070;
+    }
+    >ul {
+        > li {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include breakpoint( pc ) {
+            margin-bottom: 0;
+            font-size: 1.7rem;
+        }
+        }
+    }
+	&.is-open {
+        left: 0;
+		.c-arrow--top-l {
+			&::before {
+				display: none;
+			}
+		}
+	}
 }

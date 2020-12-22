@@ -1,0 +1,15 @@
+.p-gnav{
+    ul{
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        display: flex;
+        justify-content: flex-end;
+        }
+        li{
+            @include breakpoint ( pc ) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

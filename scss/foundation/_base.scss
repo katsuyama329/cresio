@@ -1,7 +1,17 @@
 //reset.css以外の全体的な定義をここに書く
+html{
+    scroll-behavior: smooth;
+}
 li {
     list-style-type: none;
 }
 a {
     text-decoration: none;
+}
+
+a:visited { 
+    color: #fff;
+    @include breakpoint( pc ) {
+    color: #707070
+    }
 }
