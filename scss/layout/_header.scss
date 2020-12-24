@@ -8,8 +8,8 @@
         position: static;
         max-width: 100%;
         display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
+        justify-content: space-between;
+        align-items: center;
     }
     &__logo {
         @include breakpoint ( tablet ) {
@@ -37,10 +37,9 @@
     }
     &__menu{
         @include breakpoint ( tablet ) {
-
         }
         @include breakpoint ( pc ) {
-            padding-bottom: 30px;
+            font-weight: bold;
         }
         .right{
             .p-humburger {

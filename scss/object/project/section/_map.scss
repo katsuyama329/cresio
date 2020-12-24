@@ -6,9 +6,8 @@
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
-        overflow: visible;
         position: static;
-        padding-bottom: 0;
+        overflow: visible;
     }
     iframe {
         position: absolute;
@@ -19,9 +18,10 @@
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
-            height: 100%;
-            width: 50%;
-            right: 70px;
+            width: 40%;
+            height: 40%;
+            left: auto;
+            top: auto;
         }
     }
 }
