@@ -45,18 +45,19 @@
         <section class="p-service" id="service">
             <h2 class="c-headline--h2">SERVICE</h2>
             <p class="c-description">Cresioがご提供するサービスは2つです。</p>
-            <div class="left">
-               <img src="img/men1.png" alt="" class="">
-               <p>Sales Promotion</p>
-            </div>
-            <div class="right">
-                <div class="wrap">
-                 <img src="img/screen1.png" alt="" class="screen-img">
-                 <img src="img/graph1.png" alt="" class="graph1-img">
+            <div class="p-service--container">
+                <div class="left">
+                    <img src="img/men1.png" alt="" class="">
+                    <p>Sales Promotion</p>
                 </div>
-              <p>Web Solution</p>
+                <div class="right">
+                    <div class="wrap">
+                        <img src="img/screen1.png" alt="" class="screen-img">
+                        <img src="img/graph1.png" alt="" class="graph1-img">
+                    </div>
+                    <p>Web Solution</p>
+                </div>
             </div>
-            
             <ul class="p-service__items">
                 <li class="item">
                     <h3 class="c-headline--h3">Sales Promotion</h3>
@@ -132,14 +133,22 @@
             <p>お問い合わせはこちらから。<br>
             1~3営業日以内に担当者からご連絡させていただきます。</p>
             <form action="./" method="POST">
-                <label for="kenmei">件名</label>
-                <input type="text" name="kenmei">
-                <label for="onamae">お名前</label>
-                <input type="text" name="onamae">
-                <label for="mail">メールアドレス</label>
-                <input type="email" name="mail">
-                <label for="comment">お問い合わせ内容</label>
-                <textarea id="comment" name="comment"></textarea>
+                <div class="p-contact--pc">
+                    <label for="kenmei">件名</label>
+                    <input type="text" name="kenmei">
+                </div>
+                <div class="p-contact--pc">
+                    <label for="onamae">お名前</label>
+                    <input type="text" name="onamae">
+                </div>
+                <div class="p-contact--pc">
+                    <label for="mail">メールアドレス</label>
+                    <input type="email" name="mail">
+                </div>
+                <div class="p-contact--pc">
+                    <label for="comment">お問い合わせ内容</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
                 <input type="submit" value="送信" class="buttom">
             </form>
         </section>

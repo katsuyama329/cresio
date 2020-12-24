@@ -40,3 +40,12 @@
         }
     }
 }
+
+.p-contact--pc {
+    @include breakpoint ( pc ) {
+        display: flex;
+        label {
+            padding-right: 30px;
+        }
+    }
+}

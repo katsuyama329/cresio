@@ -22,6 +22,9 @@
     > ul {
         padding: 40px 80px;
         background-color: rgba($color: #707070, $alpha: 0.6);
+        @include breakpoint ( pc ) {
+            display: flex;
+        }
         .left {
             width: 100%;
             @include breakpoint ( tablet ) {
