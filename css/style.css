@@ -82,8 +82,7 @@ a:visited {
 
 @media (min-width: 769px) {
   .l-header__logo img {
-    width: 400px;
-    min-width: 330px;
+    width: 25vw;
   }
 }
 
@@ -186,7 +185,7 @@ dl dd {
 @media (min-width: 769px) {
   .p-map iframe {
     width: 40%;
-    height: 40%;
+    height: 45%;
     left: auto;
     top: auto;
   }
@@ -216,10 +215,12 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-company > ul {
-    padding: 50px 20px;
+    padding: 5vw 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 }
 
@@ -253,7 +254,7 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-contact {
-    padding: 0 100px;
+    padding: 0 20vw;
   }
 }
 
@@ -335,6 +336,7 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-gnav > ul {
+    padding-left: 2.5vw;
     padding-right: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -343,10 +345,11 @@ dl dd {
 }
 
 @media (min-width: 769px) {
-  .p-gnav > ul > li {
-    font-size: 3vw;
+  .p-gnav > ul > li > a {
+    width: 100%;
+    font-size: 2.0vw;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 2.5vw;
   }
 }
 
@@ -372,7 +375,7 @@ dl dd {
 
 .p-info > li {
   color: #707070;
-  padding: 80px 0;
+  margin-bottom: 80px;
 }
 
 .p-mainvisual {

@@ -3,14 +3,18 @@
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
+        padding-left: 2.5vw;
         padding-right: 0px;
         display: flex;
         }
         > li{
-            @include breakpoint ( pc ) {
-                font-size: 3vw;
-                margin-top: 10px;
-                margin-right: 40px;
+             > a{
+                 @include breakpoint ( pc ) {
+                 width: 100%;
+                 font-size: 2.0vw;
+                 margin-top: 10px;
+                 margin-right: 2.5vw;
+                }
             }
         }
     }

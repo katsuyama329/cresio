@@ -30,8 +30,7 @@
                 margin-right: auto;
             }
             @include breakpoint ( pc ) {
-                width:400px;
-                min-width: 330px;
+                width: 25vw;
             }
         }
     }
