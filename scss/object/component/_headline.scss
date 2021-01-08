@@ -8,6 +8,8 @@
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
+        font-size: 4rem;
+        margin-bottom: 100px;
     }
     &--white {
         @extend .c-headline--h2;
@@ -22,6 +24,7 @@
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
+        font-size: 2rem;
     }
 }
 .c-headline--h3 {
@@ -32,6 +35,8 @@
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
+        font-size: 3.5rem;
+        margin: 100px auto;
     }
     &--gray {
         @extend .c-headline--h3;
@@ -39,6 +44,8 @@
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
+            font-size: 3.5rem;
+            margin: 100px auto;
         }
     }
 }
@@ -82,10 +89,18 @@ dl{
         color: #707070;
         font-size: 1.4rem;
         padding-bottom: 30px;
+        @include breakpoint( pc ) {
+            font-size: 2.0rem;
+            padding-bottom: 60px;
+        }
     }
     dd {
         color: #707070;
         font-size: 1.0rem;
         padding-bottom: 30px;
+        @include breakpoint ( pc ) {
+            font-size: 1.6rem;
+            padding-bottom: 20px;
+        }
     }
 }

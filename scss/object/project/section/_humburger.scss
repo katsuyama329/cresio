@@ -1,5 +1,5 @@
-$btnWidth: 20px;
-$btnHeight: 1px;
+$btnWidth: 2.0rem;
+$btnHeight: 0.3rem;
 //*--button--*//
 
 .p-humburger {
@@ -43,7 +43,7 @@ $btnHeight: 1px;
      width: $btnWidth;
      height: $btnHeight;
      font-size: 0;
-     background: linear-gradient( to right, #707070, #707070 ) repeat-x #707070;
+     background: #707070;
      background-size: auto $btnHeight;
      position: absolute;
      left: calc( 50% - ( #{$btnWidth} / 2 ) );
@@ -53,11 +53,17 @@ $btnHeight: 1px;
     &.is-open {
         &::before {
          transform: rotate( 45deg );
-         top: 28px;
+         top: 25px;
+           @include breakpoint( tablet ) {
+               top: 35px;
+           }
         }
         &::after {
          transform: rotate( -45deg );
-         top: 28px;
+         top: 25px;
+            @include breakpoint( tablet ){
+                top: 35px;
+            }
         }
         > span {
             background: none;

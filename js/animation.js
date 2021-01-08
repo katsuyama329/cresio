@@ -7,9 +7,6 @@ $(function(){
             if (scroll > imgPos - windowHeight + windowHeight/5){
                 $(this).addClass("fade_on");
             } 
-            else {
-                $(this).removeClass("fade_on");
-            }
         });
     });
 });

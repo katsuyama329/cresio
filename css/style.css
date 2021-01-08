@@ -109,6 +109,13 @@ a:visited {
   color: #707070;
 }
 
+@media (min-width: 769px) {
+  .c-headline--h2, .c-headline--h2--white {
+    font-size: 4rem;
+    margin-bottom: 100px;
+  }
+}
+
 .c-headline--h2--white {
   color: #fff;
 }
@@ -118,6 +125,12 @@ a:visited {
   color: #707070;
 }
 
+@media (min-width: 769px) {
+  .c-description {
+    font-size: 2rem;
+  }
+}
+
 .c-headline--h3, .c-headline--h3--gray {
   color: #fff;
   font-size: 2.5rem;
@@ -125,8 +138,22 @@ a:visited {
   margin: 60px auto;
 }
 
+@media (min-width: 769px) {
+  .c-headline--h3, .c-headline--h3--gray {
+    font-size: 3.5rem;
+    margin: 100px auto;
+  }
+}
+
 .c-headline--h3--gray {
   color: #707070;
+}
+
+@media (min-width: 769px) {
+  .c-headline--h3--gray {
+    font-size: 3.5rem;
+    margin: 100px auto;
+  }
 }
 
 .c-headline--h4 {
@@ -154,10 +181,24 @@ dl dt {
   padding-bottom: 30px;
 }
 
+@media (min-width: 769px) {
+  dl dt {
+    font-size: 2.0rem;
+    padding-bottom: 60px;
+  }
+}
+
 dl dd {
   color: #707070;
   font-size: 1.0rem;
   padding-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  dl dd {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
 }
 
 .p-map {
@@ -239,10 +280,22 @@ dl dd {
   font-size: 14px;
 }
 
+@media (min-width: 769px) {
+  .p-company > ul .left dl dt {
+    font-size: 1.2rem;
+  }
+}
+
 .p-company > ul .left dl dd {
   padding-left: 10px;
   color: #fff;
   font-size: 14px;
+}
+
+@media (min-width: 769px) {
+  .p-company > ul .left dl dd {
+    font-size: 1.2rem;
+  }
 }
 
 .p-contact {
@@ -344,12 +397,29 @@ dl dd {
   }
 }
 
+.p-gnav > ul > li > a {
+  padding-bottom: 5px;
+}
+
 @media (min-width: 769px) {
   .p-gnav > ul > li > a {
+    color: #707070;
     width: 100%;
     font-size: 2.0vw;
     margin-top: 10px;
     margin-right: 2.5vw;
+  }
+}
+
+.p-gnav > ul > li > a:hover {
+  border-bottom: solid 0.75px #fff;
+}
+
+@media (min-width: 769px) {
+  .p-gnav > ul > li > a:hover {
+    border-bottom: solid 0.75px #707070;
+    -webkit-transition: border-bottom .2s;
+    transition: border-bottom .2s;
   }
 }
 
@@ -465,6 +535,12 @@ dl dd {
 }
 
 @media (min-width: 769px) {
+  .p-service .c-description {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 769px) {
   .p-service--container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -480,13 +556,12 @@ dl dd {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   width: 40%;
 }
 
 @media (min-width: 769px) {
   .p-service--container .left > img {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -494,6 +569,12 @@ dl dd {
   text-align: center;
   font-size: 35px;
   margin-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+  .p-service--container .left > p {
+    margin: 75px auto;
+  }
 }
 
 .p-service--container .right {
@@ -515,7 +596,7 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-service--container .right .wrap .screen-img {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -525,7 +606,7 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-service--container .right .wrap .graph1-img {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -536,7 +617,7 @@ dl dd {
 
 @media (min-width: 769px) {
   .p-service--container .right > p {
-    margin: 0;
+    margin: 50px auto;
   }
 }
 
@@ -670,11 +751,11 @@ dl dd {
 
 .p-humburger::before, .p-humburger::after {
   content: "";
-  width: 20px;
-  height: 1px;
+  width: 2rem;
+  height: 0.3rem;
   background: #707070;
   position: absolute;
-  left: calc( 50% - ( 20px / 2 ));
+  left: calc( 50% - ( 2rem / 2 ));
   display: block;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -703,14 +784,13 @@ dl dd {
 }
 
 .p-humburger > span {
-  width: 20px;
-  height: 1px;
+  width: 2rem;
+  height: 0.3rem;
   font-size: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#707070), to(#707070)) repeat-x #707070;
-  background: linear-gradient(to right, #707070, #707070) repeat-x #707070;
-  background-size: auto 1px;
+  background: #707070;
+  background-size: auto 0.3rem;
   position: absolute;
-  left: calc( 50% - ( 20px / 2 ));
+  left: calc( 50% - ( 2rem / 2 ));
   top: 50%;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -721,13 +801,25 @@ dl dd {
 .p-humburger.is-open::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 28px;
+  top: 25px;
+}
+
+@media (min-width: 641px) {
+  .p-humburger.is-open::before {
+    top: 35px;
+  }
 }
 
 .p-humburger.is-open::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 28px;
+  top: 25px;
+}
+
+@media (min-width: 641px) {
+  .p-humburger.is-open::after {
+    top: 35px;
+  }
 }
 
 .p-humburger.is-open > span {
