@@ -1,8 +1,12 @@
 .p-mainvisual {
     position: relative;
     box-sizing: border-box;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    @include breakpoint (pc){
+        margin-bottom: 100px;
+    }
     &--white-1 {
+        font-family: 'Sawarabi Gothic', sans-serif;
         font-weight: bold;
         font-size: 5.46875vw;
         letter-spacing: 0.1vw;
@@ -14,6 +18,7 @@
         }
     }
     &--white-2 {
+        font-family: 'Sawarabi Gothic', sans-serif;
         font-weight: bold;
         font-size: 5.46875vw;
         letter-spacing: 0.1vw;
@@ -25,14 +30,15 @@
         }
     }
     &--gray {
+        font-family: 'Kosugi', sans-serif;
         font-weight: bold;
         font-size: 5.46875vw;
         letter-spacing: 0.1vw;
         color: #707070;
         opacity: 0.7;
         position: absolute;
-        right: 6vw;
-        top: 21.5vw;
-        transform: rotateX(180deg) skewX(-40deg);
+        right: 4.8vw;
+        top: 21.6vw;
+        transform: rotateX(180deg) skewX(-55deg);
     }
 }

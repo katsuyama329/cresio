@@ -13,20 +13,24 @@
     }
     h3 {
         box-sizing: border;
+        margin: 70px;
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
+            margin: 70px 70px 120px 70px;
         }
     }
     a {
         box-sizing: border;
-        font-size: 33px;
         color: #707070;
-        border: solid #707070 4px;
-        padding: 16px;
+        font-size: 16px;
+        border: solid #707070 3px;
+        padding: 12px;
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
+            padding: 16px;
+            font-size: 33px;
         }
     }
 }

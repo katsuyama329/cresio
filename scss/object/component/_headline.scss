@@ -1,9 +1,10 @@
 //見出し
 
 .c-headline--h2 {
+    font-family: 'Sawarabi Gothic', sans-serif;
     text-align: center;
     margin-bottom: 50px;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: #707070;
     @include breakpoint ( tablet ) {
     }
@@ -19,7 +20,8 @@
 
 
 .c-description {
-    font-size: 1.4rem;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.1rem;
     color: #707070;
     @include breakpoint ( tablet ) {
     }
@@ -28,10 +30,11 @@
     }
 }
 .c-headline--h3 {
+    font-family: 'Sawarabi Gothic', sans-serif;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin: 60px auto;
+    margin: 30px auto;
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
@@ -51,30 +54,36 @@
 }
 
 .c-headline--h4{
+    font-family: 'Sawarabi Gothic', sans-serif;
     color: #707070;
-    font-size: 1.56rem;
+    font-size: 1.1rem;
     font-weight: lighter;
-    padding: 30px 30px;
+    padding-bottom: 30px;
     @include breakpoint ( tablet ) {
     }
     @include breakpoint ( pc ) {
+        padding: 30px 30px;
+        font-size: 1.56rem;
     }
 }
 .left {
     p {
-        font-size: 1.4rem;
+        font-family: 'Sawarabi Gothic', sans-serif;
         font-weight: bold;
         color: #707070;
+        font-size: 25px;
         @include breakpoint ( tablet ) {
         }
         @include breakpoint ( pc ) {
+            font-size: 35px;
         }
     }
 }
 
 .right {
     p {
-        font-size: 1.4rem;
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-size: 25px;
         font-weight: bold;
         color: #707070;
         @include breakpoint ( tablet ) {
@@ -86,8 +95,9 @@
 
 dl{
     dt {
+        font-family: 'Sawarabi Gothic', sans-serif;
         color: #707070;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding-bottom: 30px;
         @include breakpoint( pc ) {
             font-size: 2.0rem;
@@ -95,6 +105,7 @@ dl{
         }
     }
     dd {
+        font-family: 'Sawarabi Gothic', sans-serif;
         color: #707070;
         font-size: 1.0rem;
         padding-bottom: 30px;

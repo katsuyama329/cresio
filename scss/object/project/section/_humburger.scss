@@ -1,8 +1,9 @@
-$btnWidth: 2.0rem;
-$btnHeight: 0.3rem;
+$btnWidth: 30px;
+$btnHeight: 0.8px;
 //*--button--*//
 
 .p-humburger {
+    border: 1.5px solid #707070;
     width : 55px;
     height : 51.8px;
     background-color: #fff;
@@ -22,45 +23,49 @@ $btnHeight: 0.3rem;
      width     : $btnWidth;
      height    : $btnHeight;
      background: #707070;
+     background-size: auto $btnHeight;
      position  : absolute;
      left      : calc( 50% - ( #{$btnWidth} / 2 ) );
      display   : block;
      transition: transform 0.2s;
     }
     &::before {
-     top: 12px;
-     @include breakpoint ( tablet ) {
-         top: 16px;
+        top: 14px;
+        @include breakpoint ( tablet ) {
+            top: 16px;
         }
     }
     &::after {
-     top: 35px;
-     @include breakpoint ( tablet ) {
-         top: 53px;
+        top: 35px;
+        @include breakpoint ( tablet ) {
+            top: 53px;
         }
     }
     > span {
-     width: $btnWidth;
-     height: $btnHeight;
-     font-size: 0;
-     background: #707070;
-     background-size: auto $btnHeight;
-     position: absolute;
-     left: calc( 50% - ( #{$btnWidth} / 2 ) );
-     top: 50%;
-     transition: transform 0.2s;
+        width: $btnWidth;
+        height: $btnHeight;
+        font-size: 0;
+        background: #707070;
+        background-size: auto $btnHeight;
+        position: absolute;
+        left: calc( 50% - ( #{$btnWidth} / 2 ) );
+        top: 50%;
+        transition: transform 0.2s;
+        @include breakpoint ( tablet ) {
+            
+        }
     }
     &.is-open {
         &::before {
-         transform: rotate( 45deg );
-         top: 25px;
-           @include breakpoint( tablet ) {
-               top: 35px;
-           }
+        transform: rotate( 45deg );
+        top: 25px;
+        @include breakpoint( tablet ) {
+            top: 35px;
+        }
         }
         &::after {
-         transform: rotate( -45deg );
-         top: 25px;
+        transform: rotate( -45deg );
+        top: 25px;
             @include breakpoint( tablet ){
                 top: 35px;
             }
@@ -105,12 +110,15 @@ body {
     }
     >ul {
         > li {
-        font-size: 2.5rem;
+        letter-spacing: 2px;
+        color: #fff;
+        font-size: 1.8rem;
         margin-bottom: 50px;
         &:last-child {
             margin-bottom: 0;
         }
         @include breakpoint( pc ) {
+            color: #707070;
             margin-bottom: 0;
             font-size: 1.7rem;
         }

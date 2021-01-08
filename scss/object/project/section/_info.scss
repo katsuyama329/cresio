@@ -1,5 +1,5 @@
 .p-info {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: #707070;
     @include breakpoint ( tablet ) {
@@ -11,7 +11,11 @@
         color: #707070;
     }
     > li{
+        font-family: 'Kosugi', sans-serif;
         color: #707070;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+        @include breakpoint( pc) {
+            margin-bottom: 80px;
+        }
     }
 }

@@ -20,7 +20,7 @@
         }
     }
     > ul {
-        padding: 40px 80px;
+        padding: 40px 20px;
         background-color: rgba($color: #707070, $alpha: 0.6);
         @include breakpoint ( pc ) {
             padding: 5vw 10vw;
@@ -29,34 +29,38 @@
             font-size: 1.2rem;
         } 
         .left {
-            width: 55%;
             @include breakpoint ( tablet ) {
             }
             @include breakpoint ( pc ) {
+                width: 55%;
             }
-            dl {
+            > dl {
                 display: flex;
+                padding-bottom: 0px;
                 @include breakpoint ( tablet ) {
                 }
                 @include breakpoint ( pc ) {
+                    padding-bottom: 30px;
                 }
-                dt {
+                > dt {
                     color: #fff;
-                    font-size: 14px;
+                    font-size: 13px;
                     @include breakpoint ( tablet ) {
                     }
                     @include breakpoint ( pc ) {
-                        font-size: 1.2rem;
+                        font-size: 16px;
+                        padding-bottom: 0;
                     }
                 }
-                 dd {
+                 > dd {
                     padding-left: 10px;
                     color: #fff;
-                    font-size: 14px;
+                    font-size: 12px;
                         @include breakpoint ( tablet ) {
                     }
                         @include breakpoint ( pc ) {
-                            font-size: 1.2rem;
+                            padding: 0;
+                            font-size: 16px;
                     }
                 }
             }

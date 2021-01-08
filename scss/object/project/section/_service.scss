@@ -38,6 +38,7 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                height: auto;
                 width: 40%;
                 @include breakpoint ( tablet ) {
                 }
@@ -46,12 +47,13 @@
                 }
             }
             > p {
+                font-family: 'Sawarabi Gothic', sans-serif;
                 text-align: center;
-                font-size: 35px;
-                margin-bottom: 50px;
+                margin: 25px auto;
                 @include breakpoint ( tablet ) {
                 }
                 @include breakpoint ( pc ) {
+                    font-size: 35px;
                     margin: 75px auto;
                 }
             }
@@ -67,6 +69,7 @@
                 justify-content: center;
             .screen-img {
                 width: 30%;
+                height: 30%;
                 @include breakpoint ( tablet ) {
                 }
                 @include breakpoint ( pc ) {
@@ -75,6 +78,7 @@
             }
             .graph1-img {
                 width: 30%;
+                height: 30%;
                 @include breakpoint ( tablet ) {
                 }
                 @include breakpoint ( pc ) {
@@ -83,12 +87,13 @@
                 }
             }
             > p {
-                font-size: 35px;
-                margin: 50px;
+                font-family: 'Sawarabi Gothic', sans-serif;
+                margin: 25px auto;
                 @include breakpoint ( tablet ) {
                 }
                 @include breakpoint ( pc ) {
-                margin: 50px auto;
+                    margin-top: 50px;
+                    font-size: 35px;
                 }
             }
         }
@@ -131,7 +136,7 @@
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
-                    padding-top: 20px;
+                    padding-top: 30px;
                     @include breakpoint ( tablet ) {
                     }
                     @include breakpoint ( pc ) {
@@ -142,11 +147,13 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                padding: 20px 20px;
+                padding: 30px 25px;
                 text-align: center;
                 @include breakpoint ( tablet ) {
+                    padding: 40px 35px;
                 }
                 @include breakpoint ( pc ) {
+                    padding: 0 50px 50px 50px;
                 }
                 dt {
                     @include breakpoint ( tablet ) {
@@ -155,6 +162,7 @@
                     }
                 }
                 dd {
+                    letter-spacing: 1px;
                     text-align: left;
                         @include breakpoint ( tablet ) {
                         }
@@ -201,6 +209,13 @@
                         margin-right: auto;
                         margin-left: auto;
                         padding: 20px 20px;
+                        letter-spacing: 1px;
+                        @include breakpoint ( tablet ){
+                            padding: 35px 35px;
+                        }
+                        @include breakpoint (pc) {
+                            padding: 50px 50px;
+                        }
                         dt {
                             text-align: center;
                             dd {
