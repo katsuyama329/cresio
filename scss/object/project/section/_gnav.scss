@@ -1,0 +1,30 @@
+.p-gnav{
+    > ul{
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+            padding-left: 2.5vw;
+            padding-right: 0px;
+            display: flex;
+        }
+        > li{
+            > a{
+                padding-bottom: 5px;
+                @include breakpoint ( pc ) {
+                 color: #707070;
+                 width: 100%;
+                 font-size: 2.0vw;
+                 margin-top: 10px;
+                 margin-right: 2.5vw;
+                }
+            }
+            > a:hover {
+                border-bottom: solid 0.75px #fff;
+                @include breakpoint (pc) {
+                 border-bottom: solid 0.75px #707070;
+                 transition: border-bottom .2s;
+                }
+            }
+        }
+    }
+}

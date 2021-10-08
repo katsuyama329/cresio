@@ -1,0 +1,230 @@
+.p-service { 
+    margin-bottom: 100px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    display: flex;
+    }
+    .c-headline--h2 {
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+    .c-description {
+        text-align: center;
+        margin-bottom: 50px;
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+                margin-bottom: 100px;
+            }
+        }
+    &--container {
+        @include breakpoint ( pc ) {
+         display: flex;
+         justify-content: center;
+         margin-bottom: 100px;
+        }
+        .left {
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            > img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                width: 40%;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    width: 80%;
+                }
+            }
+            > p {
+                font-family: 'Sawarabi Gothic', sans-serif;
+                text-align: center;
+                margin: 25px auto;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    font-size: 35px;
+                    margin: 75px auto;
+                }
+            }
+        }
+        .right {
+            text-align: center;
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            .wrap {
+                display: flex;
+                justify-content: center;
+            .screen-img {
+                width: 30%;
+                height: 30%;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    width: 45%;
+                }
+            }
+            .graph1-img {
+                width: 30%;
+                height: 30%;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    width: 45%;
+                }
+                }
+            }
+            > p {
+                font-family: 'Sawarabi Gothic', sans-serif;
+                margin: 25px auto;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    margin-top: 50px;
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    &__items {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-image: url(../img/content.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #00aaff;
+        padding: 30px 30px;
+        box-sizing: border-box;
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+        > .item {
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            .c-headline--h3{
+                text-align: center;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                }
+            }
+            .inner {
+                background-color: rgba($color: #fff, $alpha: 0.7);
+                width: 80%;
+                margin: 0 auto;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                }
+            > img {
+                    width: 15%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 30px;
+                    @include breakpoint ( tablet ) {
+                    }
+                    @include breakpoint ( pc ) {
+                        width: 9%;
+                    }
+                }
+            dl{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 30px 25px;
+                text-align: center;
+                @include breakpoint ( tablet ) {
+                    padding: 40px 35px;
+                }
+                @include breakpoint ( pc ) {
+                    padding: 0 50px 50px 50px;
+                }
+                dt {
+                    @include breakpoint ( tablet ) {
+                    }
+                    @include breakpoint ( pc ) {
+                    }
+                }
+                dd {
+                    letter-spacing: 1px;
+                    text-align: left;
+                        @include breakpoint ( tablet ) {
+                        }
+                        @include breakpoint ( pc ) {
+                        }
+                    }
+                }
+            }//inner
+            > ul{
+                padding-left: 0px;
+                li{
+                    margin-bottom: 50px;
+                    background-color: rgba($color: #fff, $alpha: 0.8);
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    justify-content: center;
+                    @include breakpoint ( pc ) {
+                        width: 80%;
+                        margin: 50px auto;
+                    }
+                    .c-headline--h4 {
+                        text-align: center;
+                        @include breakpoint ( tablet ) {
+                        }
+                        @include breakpoint ( pc ) {
+                        }
+                    }
+                    img{
+                        width: 25%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 25px;
+                        @include breakpoint ( tablet ) {
+                        }
+                        @include breakpoint ( pc ) {
+                            width: 15%;
+                        }
+                    }//img
+                    dl {
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding: 20px 20px;
+                        letter-spacing: 1px;
+                        @include breakpoint ( tablet ){
+                            padding: 35px 35px;
+                        }
+                        @include breakpoint (pc) {
+                            padding: 50px 50px;
+                        }
+                        dt {
+                            text-align: center;
+                            dd {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }//li
+            }//ul
+        }//item
+    }//&__items
+}//.p-service

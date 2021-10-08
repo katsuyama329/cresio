@@ -1,0 +1,44 @@
+.p-mainvisual {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    @include breakpoint (pc){
+        margin-bottom: 100px;
+    }
+    &--white-1 {
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 5.46875vw;
+        letter-spacing: 0.1vw;
+        color: #fff;
+        position: absolute;
+        right: 8vw;
+        top: 16.8vw;
+        @include breakpoint ( pc ) {
+        }
+    }
+    &--white-2 {
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 5.46875vw;
+        letter-spacing: 0.1vw;
+        color: #fff;
+        position: absolute;
+        right: 8vw;
+        top: 30.8vw;
+        @include breakpoint ( pc ) {
+        }
+    }
+    &--gray {
+        font-family: 'Kosugi', sans-serif;
+        font-weight: bold;
+        font-size: 5.46875vw;
+        letter-spacing: 0.1vw;
+        color: #707070;
+        opacity: 0.7;
+        position: absolute;
+        right: 4.8vw;
+        top: 21.6vw;
+        transform: rotateX(180deg) skewX(-55deg);
+    }
+}

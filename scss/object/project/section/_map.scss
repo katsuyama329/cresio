@@ -1,0 +1,27 @@
+.p-map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+        position: static;
+        overflow: visible;
+    }
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+            width: 40%;
+            height: 45%;
+            left: auto;
+            top: auto;
+        }
+    }
+}

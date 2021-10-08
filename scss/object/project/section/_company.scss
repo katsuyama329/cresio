@@ -1,0 +1,81 @@
+.p-company {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background-image: url(../../../../img/company.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00aaff;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    }
+    .c-headline--h2--white {
+        margin-bottom: 0px;
+        @include breakpoint ( tablet ) {
+        }
+        @include breakpoint ( pc ) {
+        }
+    }
+    > ul {
+        padding: 40px 20px;
+        background-color: rgba($color: #707070, $alpha: 0.6);
+        @include breakpoint ( pc ) {
+            padding: 5vw 10vw;
+            display: flex;
+            font-weight: bold;
+            font-size: 1.2rem;
+        } 
+        .left {
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+                width: 55%;
+            }
+            > dl {
+                display: flex;
+                padding-bottom: 0px;
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                    padding-bottom: 30px;
+                }
+                > dt {
+                    color: #fff;
+                    font-size: 13px;
+                    @include breakpoint ( tablet ) {
+                    }
+                    @include breakpoint ( pc ) {
+                        font-size: 16px;
+                        padding-bottom: 0;
+                    }
+                }
+                 > dd {
+                    padding-left: 10px;
+                    color: #fff;
+                    font-size: 12px;
+                        @include breakpoint ( tablet ) {
+                    }
+                        @include breakpoint ( pc ) {
+                            padding: 0;
+                            font-size: 16px;
+                    }
+                }
+            }
+        }
+        .right {
+            @include breakpoint ( tablet ) {
+            }
+            @include breakpoint ( pc ) {
+            }
+            .p-map{
+                @include breakpoint ( tablet ) {
+                }
+                @include breakpoint ( pc ) {
+                }
+            }
+        }
+    }
+}

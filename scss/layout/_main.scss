@@ -1,0 +1,7 @@
+.p-contents {
+     width: 100%;
+    @include breakpoint ( tablet ) {
+    }
+    @include breakpoint ( pc ) {
+    }
+}//.p-contents 
